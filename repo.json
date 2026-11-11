@@ -1,0 +1,8 @@
+{
+  "name": "CineSubz (clouds-lk)",
+  "description": "CineSubz.lk - Movies & TV with Sinhala subtitles",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/uglybaldfatso/clouds-lk/builds/plugins.json"
+  ]
+}
