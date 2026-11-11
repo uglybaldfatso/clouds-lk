@@ -117,10 +117,14 @@ class CineSubz : MainAPI() {
     override suspend fun quickSearch(query: String): List<SearchResponse> = search(query)
 
     private fun CardInfo.toSearchResponse(): SearchResponse? {
+        // NOTE: keep the poster in a local val — inside the initializer lambdas below,
+        // an unqualified `posterUrl` would resolve to the builder's own null property
+        // (receiver shadowing) instead of this CardInfo's field.
+        val poster = this.posterUrl
         return if (isTv) {
-            newTvSeriesSearchResponse(title, url, TvType.TvSeries) { this.posterUrl = posterUrl }
+            newTvSeriesSearchResponse(title, url, TvType.TvSeries) { this.posterUrl = poster }
         } else {
-            newMovieSearchResponse(title, url, TvType.Movie) { this.posterUrl = posterUrl }
+            newMovieSearchResponse(title, url, TvType.Movie) { this.posterUrl = poster }
         }
     }
 
