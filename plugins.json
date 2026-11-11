@@ -1,0 +1,23 @@
+[
+    {
+        "iconUrl": "https://cinesubz.lk/wp-content/uploads/2021/03/cropped-logo-cinesubz.png",
+        "fileHash": "sha256-4d87b17bf82899e60e93a34091bcb0226e0a959a82cd3cba2a0f9ac4b16c62d3",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/uglybaldfatso/clouds-lk",
+        "fileSize": 36544,
+        "status": 1,
+        "language": "si",
+        "authors": [
+            "uglybaldfatso"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "CineSubz",
+        "description": "CineSubz.lk - Movies & TV Series with Sinhala subtitles | \u0dc3\u0dd2\u0d82\u0dc4\u0dbd \u0d8b\u0db4\u0dc3\u0dd2\u0dbb\u0dd0\u0dc3\u0dd2",
+        "url": "https://raw.githubusercontent.com/uglybaldfatso/clouds-lk/builds/CineSubz.cs3",
+        "name": "CineSubz"
+    }
+]
